@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Book - Unapologetically Too Much</title>
+    <meta name="description" content="Learn more about Unapologetically Too Much - a raw, radiant memoir for every woman who's been told to shrink.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS with color palette -->
+    <style>
+        :root {
+            --color-primary: #8B2635;
+            --color-secondary: #D4A574;
+            --color-accent: #F5F1E8;
+            --color-text: #2D2D2D;
+            --color-background: #FEFCF7;
+        }
+        
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .bg-text { background-color: var(--color-text); }
+        .bg-background { background-color: var(--color-background); }
+        .bg-accent\/30 { background-color: rgba(245, 241, 232, 0.3); }
+        .bg-accent\/50 { background-color: rgba(245, 241, 232, 0.5); }
+        .bg-background\/95 { background-color: rgba(254, 252, 247, 0.95); }
+        .bg-primary\/90 { background-color: rgba(139, 38, 53, 0.9); }
+        
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-text { color: var(--color-text); }
+        .text-background { color: var(--color-background); }
+        .text-text\/80 { color: rgba(45, 45, 45, 0.8); }
+        .text-text\/60 { color: rgba(45, 45, 45, 0.6); }
+        .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+        
+        .border-secondary { border-color: var(--color-secondary); }
+        .border-secondary\/20 { border-color: rgba(212, 165, 116, 0.2); }
+        
+        .hover\:bg-primary:hover { background-color: var(--color-primary); }
+        .hover\:bg-secondary:hover { background-color: var(--color-secondary); }
+        .hover\:bg-primary\/90:hover { background-color: rgba(139, 38, 53, 0.9); }
+        .hover\:text-primary:hover { color: var(--color-primary); }
+        .hover\:text-white:hover { color: white; }
+        
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-secondary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-serif font-semibold text-primary">Unapologetically Too Much</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="about-book.html" class="text-primary font-medium">About the Book</a>
+                    <a href="about-author.html" class="text-text hover:text-primary transition-colors">About the Author</a>
+                    <a href="inside-book.html" class="text-text hover:text-primary transition-colors">Inside the Book</a>
+                    <a href="get-book.html" class="text-text hover:text-primary transition-colors">Get the Book</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-secondary/20">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="about-book.html" class="block py-2 text-primary font-medium">About the Book</a>
+                <a href="about-author.html" class="block py-2 text-text hover:text-primary">About the Author</a>
+                <a href="inside-book.html" class="block py-2 text-text hover:text-primary">Inside the Book</a>
+                <a href="get-book.html" class="block py-2 text-text hover:text-primary">Get the Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                About the Book
+            </h1>
+            <p class="text-xl font-serif italic text-secondary mb-8">
+                A transformative journey from survival to sovereignty
+            </p>
+        </div>
+    </section>
+
+    <!-- Book Overview -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div>
+<div class="w-full max-w-md mx-auto lg:mx-0 aspect-[2/3] rounded-lg shadow-2xl overflow-hidden">
+    <img src="assets/images/book-cover.jpeg" alt="Unapologetically Too Much book cover by Zaria Frances Rose" class="w-full h-full object-cover">
+</div>
+                </div>
+                
+                <div class="lg:pl-8">
+                    <h2 class="text-3xl font-serif font-bold text-primary mb-6">
+                        A Story of Awakening
+                    </h2>
+                    <div class="space-y-6 text-lg text-text/80 leading-relaxed">
+                        <p>
+                            <em>Unapologetically Too Much</em> chronicles the raw, unvarnished journey of a woman who looked perfect on paper but was slowly dying inside. Through visceral storytelling and transformative wisdom, this memoir illuminates the path from people-pleasing to authentic power.
+                        </p>
+                        <p>
+                            This isn't just another self-help book—it's a manifesto for women who've been told to shrink, dim their light, or apologize for taking up space. It's for the woman who gives until she's empty, who says yes when she means no, who's exhausted from living everyone else's version of her life.
+                        </p>
+                        <p>
+                            Through intimate stories of toxic relationships, burnout, and the courageous choice to rebuild from the ground up, author Zaria Frances Rose reveals what it really means to step into your power—messily, authentically, unapologetically.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Themes -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">Key Themes & Messages</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-background p-8 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-serif font-bold text-primary mb-4">The Blueprint Prison</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        How inherited patterns and societal expectations create invisible cages that keep women from living authentically. Learn to identify and break free from the blueprints that no longer serve you.
+                    </p>
+                </div>
+                <div class="bg-background p-8 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-serif font-bold text-primary mb-4">Embodied Boundaries</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        Moving beyond intellectual understanding to body-based knowing. Discover how to set boundaries that protect your energy and honor your authentic self.
+                    </p>
+                </div>
+                <div class="bg-background p-8 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-serif font-bold text-primary mb-4">The Sacred Rage</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        Why your anger is not the enemy—it's information. Learn to channel righteous anger into fuel for transformation and positive change.
+                    </p>
+                </div>
+                <div class="bg-background p-8 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-serif font-bold text-primary mb-4">Reclaiming Your Voice</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        The journey from silence to speaking truth, from performative niceness to authentic expression. Your voice matters—learn to use it powerfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes This Book Different -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">What Makes This Book Different</h3>
+            <div class="space-y-8">
+                <div class="border-l-4 border-secondary pl-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Raw Honesty</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        No sugar-coating, no spiritual bypassing. This memoir tells the truth about what it really takes to change your life—including the messy, uncomfortable parts.
+                    </p>
+                </div>
+                <div class="border-l-4 border-secondary pl-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Practical Integration</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        Each chapter includes embodied practices and rituals to help you integrate the insights into your daily life. This isn't just inspiration—it's transformation.
+                    </p>
+                </div>
+                <div class="border-l-4 border-secondary pl-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Body-Based Wisdom</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        Moving beyond cognitive understanding to somatic knowing. Learn to trust your body's wisdom and use it as your compass for authentic living.
+                    </p>
+                </div>
+                <div class="border-l-4 border-secondary pl-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">For the Highly Sensitive</h4>
+                    <p class="text-text/80 leading-relaxed">
+                        Written specifically for sensitive, empathic women who feel everything deeply. Your sensitivity isn't a weakness—it's your superpower.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Details -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-serif font-bold mb-8">Publication Details</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Publication Date</h4>
+                    <p class="text-white/80">September 23, 2024</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Format</h4>
+                    <p class="text-white/80">Paperback & Digital</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-secondary mb-2">Pages</h4>
+                    <p class="text-white/80">280 pages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-serif font-bold text-primary mb-6">Ready to Begin Your Journey?</h3>
+            <p class="text-lg text-text/80 mb-8">
+                Join thousands of women who are choosing authenticity over approval, sovereignty over survival.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="get-book.html" 
+                   class="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Get Your Copy Now
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="inside-book.html" 
+                   class="inline-flex items-center px-8 py-4 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors text-lg">
+                    Read a Sample
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-2xl font-serif font-bold mb-4">Unapologetically Too Much</h4>
+            <p class="text-white/80 mb-4">Breaking Free, Burning Bright, Becoming Whole</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about-book.html" class="text-white/80 hover:text-white transition-colors">About the Book</a>
+                <a href="about-author.html" class="text-white/80 hover:text-white transition-colors">About the Author</a>
+                <a href="get-book.html" class="text-white/80 hover:text-white transition-colors">Get the Book</a>
+            </div>
+            <p class="text-white/60 text-sm">&copy; 2024 Zaria Frances Rose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

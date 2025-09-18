@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unapologetically Too Much - Breaking Free, Burning Bright, Becoming Whole</title>
+    <meta name="description" content="A raw, radiant memoir for every woman who's been told to shrink. What if everything they called 'too much' was your greatest power?">
+    <meta name="keywords" content="women's empowerment memoir, healing from abuse, self-help for women, trauma recovery book, toxic relationships">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Unapologetically Too Much - Zaria Frances Rose">
+    <meta property="og:description" content="A transformative memoir for every woman who's been told to shrink.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS with color palette -->
+    <style>
+        :root {
+            --color-primary: #8B2635;
+            --color-secondary: #D4A574;
+            --color-accent: #F5F1E8;
+            --color-text: #2D2D2D;
+            --color-background: #FEFCF7;
+        }
+        
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .bg-text { background-color: var(--color-text); }
+        .bg-background { background-color: var(--color-background); }
+        .bg-accent\/30 { background-color: rgba(245, 241, 232, 0.3); }
+        .bg-accent\/50 { background-color: rgba(245, 241, 232, 0.5); }
+        .bg-background\/95 { background-color: rgba(254, 252, 247, 0.95); }
+        .bg-primary\/90 { background-color: rgba(139, 38, 53, 0.9); }
+        
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-text { color: var(--color-text); }
+        .text-background { color: var(--color-background); }
+        .text-text\/80 { color: rgba(45, 45, 45, 0.8); }
+        .text-text\/60 { color: rgba(45, 45, 45, 0.6); }
+        .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+        
+        .border-secondary { border-color: var(--color-secondary); }
+        .border-secondary\/20 { border-color: rgba(212, 165, 116, 0.2); }
+        
+        .hover\:bg-primary:hover { background-color: var(--color-primary); }
+        .hover\:bg-secondary:hover { background-color: var(--color-secondary); }
+        .hover\:bg-primary\/90:hover { background-color: rgba(139, 38, 53, 0.9); }
+        .hover\:text-primary:hover { color: var(--color-primary); }
+        .hover\:text-white:hover { color: white; }
+        
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-secondary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-serif font-semibold text-primary">Unapologetically Too Much</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="about-book.html" class="text-text hover:text-primary transition-colors">About the Book</a>
+                    <a href="about-author.html" class="text-text hover:text-primary transition-colors">About the Author</a>
+                    <a href="inside-book.html" class="text-text hover:text-primary transition-colors">Inside the Book</a>
+                    <a href="get-book.html" class="text-text hover:text-primary transition-colors">Get the Book</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-secondary/20">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="about-book.html" class="block py-2 text-text hover:text-primary">About the Book</a>
+                <a href="about-author.html" class="block py-2 text-text hover:text-primary">About the Author</a>
+                <a href="inside-book.html" class="block py-2 text-text hover:text-primary">Inside the Book</a>
+                <a href="get-book.html" class="block py-2 text-text hover:text-primary">Get the Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-serif font-bold text-primary mb-4 leading-tight">
+                            <span class="block">UNAPOLOGETICALLY</span>
+                            <span class="text-secondary block">TOO MUCH</span>
+                        </h1>
+                        <h2 class="text-lg sm:text-xl lg:text-2xl font-serif text-text/80 mb-4 lg:mb-6">
+                            Breaking Free, Burning Bright, Becoming Whole
+                        </h2>
+                        <p class="text-lg sm:text-xl lg:text-2xl font-serif italic text-primary mb-4 lg:mb-6 leading-relaxed">
+                            What if everything they called "too much" was your greatest power?
+                        </p>
+                        <p class="text-base sm:text-lg text-text/80 mb-6 lg:mb-8 leading-relaxed">
+                            A raw, radiant memoir for every woman who's been told to shrink. Available now.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="get-book.html" 
+                               class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-base sm:text-lg">
+                                Get the Book on Amazon
+                                <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <a href="inside-book.html" 
+                               class="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors text-base sm:text-lg">
+                                Read Sample
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <div class="text-center relative">
+                        <!-- Book Cover Image - Replace this div with your actual image -->
+<div class="w-full max-w-xs sm:max-w-sm mx-auto aspect-[2/3] rounded-lg shadow-2xl overflow-hidden">
+    <img src="assets/images/book-cover.jpeg" alt="Unapologetically Too Much book cover by Zaria Frances Rose" class="w-full h-full object-cover">
+</div>
+                        
+                        <!-- Note to replace with actual image -->
+                        <!--img src="assets/images/book-cover.jpeg" alt="Unapologetically Too Much book cover" class="w-full h-full object-cover"-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                You are not broken. You are becoming.
+            </h2>
+            <p class="text-lg text-text/80 mb-8 leading-relaxed">
+                If you've ever been called too loud, too sensitive, too ambitious, or too much—this book is your invitation to rise.
+            </p>
+            <p class="text-lg text-text/80 mb-8 leading-relaxed">
+                <em>Unapologetically Too Much</em> is the story of a woman who had it all on paper—marriage, career, success—but was dying inside. Through visceral storytelling and transformative rituals, author Zaria Frances Rose chronicles her journey from survival to sovereignty, from burnout to embodied power.
+            </p>
+            <p class="text-lg text-text/80 mb-12 leading-relaxed">
+                This isn't just a memoir. It's a movement. A mirror. A call to arms for every woman ready to stop apologizing and start becoming.
+            </p>
+        </div>
+    </section>
+
+    <!-- What Readers Will Discover -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">What Readers Will Discover</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Break Free from Blueprints</h4>
+                    <p class="text-text/80">How to identify and destroy inherited "blueprints" that keep women small and create your own rules for living.</p>
+                </div>
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">The Sacred Power of No</h4>
+                    <p class="text-text/80">Learn to say no without explanation and yes without guilt—the foundation of authentic boundaries.</p>
+                </div>
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Body-Based Healing</h4>
+                    <p class="text-text/80">Practical rituals for returning to your body and reclaiming your voice through embodied practices.</p>
+                </div>
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Survival vs. Living</h4>
+                    <p class="text-text/80">Understand the crucial difference between merely surviving and truly living—and how to make the shift.</p>
+                </div>
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Your "Too Much" is Enough</h4>
+                    <p class="text-text/80">Discover why everything they called "too much" about you is actually your greatest source of power.</p>
+                </div>
+                <div class="bg-accent/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Transformative Rituals</h4>
+                    <p class="text-text/80">Step-by-step practices for integration, healing, and embodying your authentic power.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial/Quote -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <blockquote class="text-xl md:text-2xl font-serif italic mb-6">
+                "This book is for every woman who has been told to shrink. Your story, your body, your boundaries, your joy matter."
+            </blockquote>
+            <cite class="text-secondary font-medium">—Zaria Frances Rose</cite>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-serif font-bold text-primary mb-6">Ready to Rise?</h3>
+            <p class="text-lg text-text/80 mb-8">Published September 23, 2025</p>
+            <a href="get-book.html" 
+               class="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                Get Your Copy Today
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-2xl font-serif font-bold mb-4">Unapologetically Too Much</h4>
+            <p class="text-white/80 mb-4">Breaking Free, Burning Bright, Becoming Whole</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about-book.html" class="text-white/80 hover:text-white transition-colors">About the Book</a>
+                <a href="about-author.html" class="text-white/80 hover:text-white transition-colors">About the Author</a>
+                <a href="get-book.html" class="text-white/80 hover:text-white transition-colors">Get the Book</a>
+            </div>
+            <p class="text-white/60 text-sm">&copy; 2025 Zaria Frances Rose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

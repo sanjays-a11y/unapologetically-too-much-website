@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside the Book - Unapologetically Too Much</title>
+    <meta name="description" content="Read sample chapters and excerpts from Unapologetically Too Much by Zaria Frances Rose.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS with color palette -->
+    <style>
+        :root {
+            --color-primary: #8B2635;
+            --color-secondary: #D4A574;
+            --color-accent: #F5F1E8;
+            --color-text: #2D2D2D;
+            --color-background: #FEFCF7;
+        }
+        
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .bg-text { background-color: var(--color-text); }
+        .bg-background { background-color: var(--color-background); }
+        .bg-accent\/30 { background-color: rgba(245, 241, 232, 0.3); }
+        .bg-accent\/50 { background-color: rgba(245, 241, 232, 0.5); }
+        .bg-background\/95 { background-color: rgba(254, 252, 247, 0.95); }
+        .bg-primary\/90 { background-color: rgba(139, 38, 53, 0.9); }
+        
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-text { color: var(--color-text); }
+        .text-background { color: var(--color-background); }
+        .text-text\/80 { color: rgba(45, 45, 45, 0.8); }
+        .text-text\/60 { color: rgba(45, 45, 45, 0.6); }
+        .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+        
+        .border-secondary { border-color: var(--color-secondary); }
+        .border-secondary\/20 { border-color: rgba(212, 165, 116, 0.2); }
+        
+        .hover\:bg-primary:hover { background-color: var(--color-primary); }
+        .hover\:bg-secondary:hover { background-color: var(--color-secondary); }
+        .hover\:bg-primary\/90:hover { background-color: rgba(139, 38, 53, 0.9); }
+        .hover\:text-primary:hover { color: var(--color-primary); }
+        .hover\:text-white:hover { color: white; }
+        
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-secondary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-serif font-semibold text-primary">Unapologetically Too Much</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="about-book.html" class="text-text hover:text-primary transition-colors">About the Book</a>
+                    <a href="about-author.html" class="text-text hover:text-primary transition-colors">About the Author</a>
+                    <a href="inside-book.html" class="text-primary font-medium">Inside the Book</a>
+                    <a href="get-book.html" class="text-text hover:text-primary transition-colors">Get the Book</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-secondary/20">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="about-book.html" class="block py-2 text-text hover:text-primary">About the Book</a>
+                <a href="about-author.html" class="block py-2 text-text hover:text-primary">About the Author</a>
+                <a href="inside-book.html" class="block py-2 text-primary font-medium">Inside the Book</a>
+                <a href="get-book.html" class="block py-2 text-text hover:text-primary">Get the Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                Inside the Book
+            </h1>
+            <p class="text-xl font-serif italic text-secondary mb-8">
+                A glimpse into the transformative journey within these pages
+            </p>
+            <p class="text-lg text-text/80 leading-relaxed">
+                Experience the raw honesty and profound insights that make this memoir a catalyst for change. Read sample excerpts and discover what awaits you on this journey of reclamation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-serif font-bold text-primary text-center mb-12">What's Inside</h2>
+            <div class="bg-background rounded-lg p-8 shadow-sm">
+                <h3 class="text-2xl font-serif font-bold text-primary mb-6">Chapter Overview</h3>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-secondary pl-6">
+                        <h4 class="text-lg font-semibold text-primary mb-2">Part I: The Unraveling</h4>
+                        <ul class="space-y-2 text-text/80">
+                            <li>Chapter 1: The Perfect Life That Wasn't</li>
+                            <li>Chapter 2: The Blueprint Prison</li>
+                            <li>Chapter 3: When Good Girls Break Bad</li>
+                            <li>Chapter 4: The Sacred Breakdown</li>
+                        </ul>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-6">
+                        <h4 class="text-lg font-semibold text-primary mb-2">Part II: The Reckoning</h4>
+                        <ul class="space-y-2 text-text/80">
+                            <li>Chapter 5: Learning to Say No (And Mean It)</li>
+                            <li>Chapter 6: The Body Knows</li>
+                            <li>Chapter 7: Befriending Your Rage</li>
+                            <li>Chapter 8: The Art of Disappointing Others</li>
+                        </ul>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-6">
+                        <h4 class="text-lg font-semibold text-primary mb-2">Part III: The Rising</h4>
+                        <ul class="space-y-2 text-text/80">
+                            <li>Chapter 9: Reclaiming Your Voice</li>
+                            <li>Chapter 10: The Power of Too Much</li>
+                            <li>Chapter 11: Building a Life That Fits</li>
+                            <li>Chapter 12: Unapologetically Whole</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Excerpt 1 -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-serif font-bold text-primary mb-4">Sample Excerpt</h3>
+                <p class="text-lg text-secondary font-serif italic">From Chapter 1: "The Perfect Life That Wasn't"</p>
+            </div>
+            
+            <div class="bg-accent/50 rounded-lg p-8 md:p-12">
+                <div class="prose prose-lg max-w-none font-serif text-text leading-relaxed">
+                    <p class="text-xl mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+                        I was thirty-five when I realized I had been living someone else's life for so long that I couldn't remember what mine was supposed to look like. The realization hit me like a slap in a quiet restaurant on a Tuesday evening, sitting across from my husband of eight years, watching him scroll through his phone while I tried to remember the last time we'd had a conversation that wasn't about logistics.
+                    </p>
+                    
+                    <p class="mb-6">
+                        From the outside, we were the picture of success. The house in the right neighborhood. The careers that impressed at dinner parties. The social media presence that suggested we had it all figured out. But sitting there, watching the golden light filter through the restaurant windows, I felt more alone than I had ever felt in my life.
+                    </p>
+                    
+                    <p class="mb-6">
+                        The waiter brought our appetizers—something I had ordered because it seemed like the kind of thing a sophisticated woman would choose, not because I actually wanted it. I realized I had been making choices like this for years. Small compromises that felt reasonable in the moment but had accumulated into a life that felt foreign to me.
+                    </p>
+                    
+                    <p class="mb-6">
+                        "How was your day?" I asked, knowing the answer would be fine, busy, the usual. But something in me was desperate for connection, for anything real.
+                    </p>
+                    
+                    <p class="mb-6">
+                        He looked up from his phone, gave me the expected response, then turned his attention back to whatever was more interesting than the woman he had promised to love and cherish. And that's when it hit me: I had spent so much energy trying to be the perfect wife, the perfect employee, the perfect woman, that I had perfected myself right out of existence.
+                    </p>
+                    
+                    <p class="italic text-primary">
+                        The question that would change everything whispered itself into my consciousness: What would happen if I stopped trying to be perfect and started trying to be real?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Insights -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-center mb-12">Key Insights You'll Discover</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Breaking Free from People-Pleasing</h4>
+                    <p class="text-white/80">Learn to identify and break the unconscious patterns that keep you trapped in the exhausting cycle of seeking approval.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Embodying Authentic Boundaries</h4>
+                    <p class="text-white/80">Move beyond intellectual understanding to body-based boundary setting that honors your energy and protects your peace.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Reclaiming Your Power</h4>
+                    <p class="text-white/80">Discover how everything you've been told is "wrong" with you is actually your greatest source of strength and wisdom.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Excerpt 2 -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-serif font-bold text-primary mb-4">Another Glimpse</h3>
+                <p class="text-lg text-secondary font-serif italic">From Chapter 5: "Learning to Say No (And Mean It)"</p>
+            </div>
+            
+            <div class="bg-accent/50 rounded-lg p-8 md:p-12">
+                <div class="prose prose-lg max-w-none font-serif text-text leading-relaxed">
+                    <p class="text-xl mb-6 first-letter:text-6xl first-letter:font-bold first-letter:text-primary first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+                        The first time I said no without providing a detailed explanation, justification, or alternative solution, I thought the world might end. It didn't. But something in me did die that day—the part of me that believed my worth was contingent on my usefulness to others.
+                    </p>
+                    
+                    <p class="mb-6">
+                        It was a small thing, really. A colleague asking me to take on yet another project that wasn't mine, expecting the usual response: "Of course! I'd be happy to help!" followed by my inevitable spiral into resentment and overwhelm.
+                    </p>
+                    
+                    <p class="mb-6">
+                        But this time, something different happened. My body responded before my people-pleasing brain could kick in. My shoulders tensed. My jaw clenched. My stomach dropped. Every cell in my being was screaming "NO" so loudly I couldn't ignore it.
+                    </p>
+                    
+                    <p class="mb-6 italic text-primary font-semibold">
+                        So I listened. For the first time in decades, I listened to my body instead of my conditioning.
+                    </p>
+                    
+                    <p class="mb-6">
+                        "I won't be able to take that on," I said, my voice steadier than I felt.
+                    </p>
+                    
+                    <p>
+                        The silence that followed felt eternal. I waited for the world to collapse, for relationships to crumble, for proof that I had been right all along—that saying no meant being selfish, difficult, unlikeable. Instead, my colleague simply said, "Okay, thanks for letting me know," and moved on to find another solution.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Elements -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">Beyond Story: Practical Tools</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-background p-8 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Embodied Practices</h4>
+                    <ul class="space-y-3 text-text/80">
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Body-based boundary setting techniques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Somatic practices for releasing stored trauma</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Breathwork exercises for emotional regulation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Movement rituals for reclaiming personal power</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-background p-8 rounded-lg">
+                    <h4 class="text-xl font-semibold text-primary mb-4">Reflection Exercises</h4>
+                    <ul class="space-y-3 text-text/80">
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Journaling prompts for deeper self-discovery</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Blueprint identification worksheets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Values clarification exercises</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-2 h-2 bg-secondary rounded-full mt-3 mr-3 flex-shrink-0"></span>
+                            <span>Integration rituals for lasting change</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-serif font-bold text-primary mb-6">Ready for the Full Journey?</h3>
+            <p class="text-lg text-text/80 mb-8">
+                These glimpses are just the beginning. Dive into the complete transformative experience that awaits within these pages.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="get-book.html" 
+                   class="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Get the Complete Book
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="about-author.html" 
+                   class="inline-flex items-center px-8 py-4 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors text-lg">
+                    Meet the Author
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-2xl font-serif font-bold mb-4">Unapologetically Too Much</h4>
+            <p class="text-white/80 mb-4">Breaking Free, Burning Bright, Becoming Whole</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about-book.html" class="text-white/80 hover:text-white transition-colors">About the Book</a>
+                <a href="about-author.html" class="text-white/80 hover:text-white transition-colors">About the Author</a>
+                <a href="get-book.html" class="text-white/80 hover:text-white transition-colors">Get the Book</a>
+            </div>
+            <p class="text-white/60 text-sm">&copy; 2024 Zaria Frances Rose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

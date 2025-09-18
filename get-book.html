@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the Book - Unapologetically Too Much</title>
+    <meta name="description" content="Purchase Unapologetically Too Much by Zaria Frances Rose. Available in paperback, hardcover, and digital formats.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS with color palette -->
+    <style>
+        :root {
+            --color-primary: #8B2635;
+            --color-secondary: #D4A574;
+            --color-accent: #F5F1E8;
+            --color-text: #2D2D2D;
+            --color-background: #FEFCF7;
+        }
+        
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent); }
+        .bg-text { background-color: var(--color-text); }
+        .bg-background { background-color: var(--color-background); }
+        .bg-accent\/30 { background-color: rgba(245, 241, 232, 0.3); }
+        .bg-accent\/50 { background-color: rgba(245, 241, 232, 0.5); }
+        .bg-background\/95 { background-color: rgba(254, 252, 247, 0.95); }
+        .bg-primary\/90 { background-color: rgba(139, 38, 53, 0.9); }
+        
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .text-accent { color: var(--color-accent); }
+        .text-text { color: var(--color-text); }
+        .text-background { color: var(--color-background); }
+        .text-text\/80 { color: rgba(45, 45, 45, 0.8); }
+        .text-text\/60 { color: rgba(45, 45, 45, 0.6); }
+        .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+        
+        .border-secondary { border-color: var(--color-secondary); }
+        .border-secondary\/20 { border-color: rgba(212, 165, 116, 0.2); }
+        
+        .hover\:bg-primary:hover { background-color: var(--color-primary); }
+        .hover\:bg-secondary:hover { background-color: var(--color-secondary); }
+        .hover\:bg-primary\/90:hover { background-color: rgba(139, 38, 53, 0.9); }
+        .hover\:text-primary:hover { color: var(--color-primary); }
+        .hover\:text-white:hover { color: white; }
+        
+        .font-serif { font-family: 'Crimson Text', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-text font-sans">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-secondary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-serif font-semibold text-primary">Unapologetically Too Much</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-text hover:text-primary transition-colors">Home</a>
+                    <a href="about-book.html" class="text-text hover:text-primary transition-colors">About the Book</a>
+                    <a href="about-author.html" class="text-text hover:text-primary transition-colors">About the Author</a>
+                    <a href="inside-book.html" class="text-text hover:text-primary transition-colors">Inside the Book</a>
+                    <a href="get-book.html" class="text-primary font-medium">Get the Book</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-background border-b border-secondary/20">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-text hover:text-primary">Home</a>
+                <a href="about-book.html" class="block py-2 text-text hover:text-primary">About the Book</a>
+                <a href="about-author.html" class="block py-2 text-text hover:text-primary">About the Author</a>
+                <a href="inside-book.html" class="block py-2 text-text hover:text-primary">Inside the Book</a>
+                <a href="get-book.html" class="block py-2 text-primary font-medium">Get the Book</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+<div class="w-full max-w-md mx-auto lg:mx-0 aspect-[2/3] rounded-lg shadow-2xl overflow-hidden">
+    <img src="assets/images/book-cover.JPEG" alt="Unapologetically Too Much book cover by Zaria Frances Rose" class="w-full h-full object-cover">
+</div>
+                </div>
+                
+                <div class="lg:pl-8">
+                    <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+                        Get Your Copy Today
+                    </h1>
+                    <p class="text-xl font-serif italic text-secondary mb-6">
+                        Available in multiple formats to suit your reading preference
+                    </p>
+                    <p class="text-lg text-text/80 mb-8 leading-relaxed">
+                        Join thousands of women who are choosing authenticity over approval and stepping into their unapologetic power. Your transformation begins with turning the first page.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 mb-8">
+                        <div class="text-center p-4 bg-accent/50 rounded-lg">
+                            <div class="text-2xl font-bold text-primary">280</div>
+                            <div class="text-sm text-text/60">Pages</div>
+                        </div>
+                        <div class="text-center p-4 bg-accent/50 rounded-lg">
+                            <div class="text-2xl font-bold text-primary">4.8</div>
+                            <div class="text-sm text-text/60">Rating</div>
+                        </div>
+                        <div class="text-center p-4 bg-accent/50 rounded-lg">
+                            <div class="text-2xl font-bold text-primary">1K+</div>
+                            <div class="text-sm text-text/60">Reviews</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purchase Options -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-serif font-bold text-primary text-center mb-12">Choose Your Format</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Paperback -->
+                <div class="bg-background rounded-lg p-8 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-4">Paperback</h3>
+                    <p class="text-3xl font-bold text-primary mb-2">$16.99</p>
+                    <p class="text-text/80 mb-6">Perfect for highlighting and note-taking during your transformation journey.</p>
+                    <ul class="text-left space-y-2 text-text/80 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            280 pages of transformative content
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            High-quality printing and binding
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Easy to carry and share
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-primary text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                        Buy on Amazon
+                    </a>
+                </div>
+
+                <!-- Digital/Kindle -->
+                <div class="bg-background rounded-lg p-8 shadow-lg text-center border-2 border-secondary">
+                    <div class="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold mb-2 inline-block">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-4">Digital Edition</h3>
+                    <p class="text-3xl font-bold text-primary mb-2">$9.99</p>
+                    <p class="text-text/80 mb-6">Instant access on all your devices. Start reading in seconds.</p>
+                    <ul class="text-left space-y-2 text-text/80 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Instant download and access
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Read on phone, tablet, or e-reader
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Searchable and adjustable font size
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-secondary text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-secondary/90 transition-colors">
+                        Buy on Kindle
+                    </a>
+                </div>
+
+                <!-- Hardcover -->
+                <div class="bg-background rounded-lg p-8 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold text-primary mb-4">Hardcover</h3>
+                    <p class="text-3xl font-bold text-primary mb-2">$24.99</p>
+                    <p class="text-text/80 mb-6">The premium edition for your personal library or as a meaningful gift.</p>
+                    <ul class="text-left space-y-2 text-text/80 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Durable hardcover binding
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Premium paper and finish
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-secondary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Perfect for gifting
+                        </li>
+                    </ul>
+                    <a href="#" class="block w-full bg-primary text-white text-center py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                        Buy on Amazon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where to Buy -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">Available Everywhere Books Are Sold</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <a href="#" class="bg-accent/50 p-6 rounded-lg text-center hover:bg-accent/70 transition-colors">
+                    <div class="text-2xl font-bold text-primary mb-2">Amazon</div>
+                    <p class="text-sm text-text/80">Print & Digital</p>
+                </a>
+                <a href="#" class="bg-accent/50 p-6 rounded-lg text-center hover:bg-accent/70 transition-colors">
+                    <div class="text-2xl font-bold text-primary mb-2">Barnes & Noble</div>
+                    <p class="text-sm text-text/80">Print & Digital</p>
+                </a>
+                <a href="#" class="bg-accent/50 p-6 rounded-lg text-center hover:bg-accent/70 transition-colors">
+                    <div class="text-2xl font-bold text-primary mb-2">Apple Books</div>
+                    <p class="text-sm text-text/80">Digital</p>
+                </a>
+                <a href="#" class="bg-accent/50 p-6 rounded-lg text-center hover:bg-accent/70 transition-colors">
+                    <div class="text-2xl font-bold text-primary mb-2">Bookshop.org</div>
+                    <p class="text-sm text-text/80">Support Local</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+    <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-serif font-bold text-center mb-12">What Readers Are Saying</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <!-- 5 stars -->
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <blockquote class="text-lg font-serif italic mb-4">
+                    "Every woman needs to read this. It's a roadmap back to yourself."
+                </blockquote>
+                <cite class="text-secondary">— Jennifer K., Coach</cite>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <!-- 5 stars -->
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <blockquote class="text-lg font-serif italic mb-4">
+                    "This book saved my life. I finally understand that my sensitivity is my superpower, not my weakness."
+                </blockquote>
+                <cite class="text-secondary">— Sarah M., Teacher</cite>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center mb-4">
+                    <!-- 5 stars -->
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                </div>
+                <blockquote class="text-lg font-serif italic mb-4">
+                    "Raw, honest, and transformative. This book gave me permission to be fully myself."
+                </blockquote>
+                <cite class="text-secondary">— Maria L., Entrepreneur</cite>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Special Offer -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-accent/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-serif font-bold text-primary mb-6">Limited Time Offer</h3>
+            <div class="bg-background rounded-lg p-8 shadow-lg">
+                <div class="text-6xl font-bold text-secondary mb-4">📚</div>
+                <h4 class="text-2xl font-serif font-bold text-primary mb-4">Get the Complete Experience</h4>
+                <p class="text-lg text-text/80 mb-6">
+                    Purchase the paperback or hardcover and receive the digital edition FREE, plus exclusive bonus materials.
+                </p>
+                <ul class="text-left max-w-md mx-auto space-y-2 text-text/80 mb-8">
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Free digital edition with print purchase
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Exclusive guided meditation audio
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Printable integration workbook
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Access to private reader community
+                    </li>
+                </ul>
+                <a href="#" class="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors text-lg">
+                    Claim Your Bonus Package
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-serif font-bold text-primary text-center mb-12">Frequently Asked Questions</h3>
+            <div class="space-y-6">
+                <div class="bg-accent/50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Is this book suitable for all ages?</h4>
+                    <p class="text-text/80">This memoir is written for adult women and deals with mature themes including toxic relationships, trauma recovery, and personal transformation. We recommend it for readers 18 and older.</p>
+                </div>
+                <div class="bg-accent/50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">How is this different from other self-help books?</h4>
+                    <p class="text-text/80">This isn't traditional self-help—it's a raw, honest memoir with practical tools woven throughout. The focus is on body-based healing and authentic transformation rather than quick fixes or surface-level advice.</p>
+                </div>
+                <div class="bg-accent/50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Can I read this if I'm still in a difficult situation?</h4>
+                    <p class="text-text/80">Yes, but please prioritize your safety and well-being. This book can be a source of strength and validation, but it's not a substitute for professional support when needed.</p>
+                </div>
+                <div class="bg-accent/50 rounded-lg p-6">
+                    <h4 class="text-xl font-semibold text-primary mb-3">Is there an audiobook version?</h4>
+                    <p class="text-text/80">Yes! The audiobook is narrated by the author and will be available soon. Sign up for updates to be notified when it's released.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-4xl font-serif font-bold mb-6">Your Journey Begins Now</h3>
+            <p class="text-xl mb-8 leading-relaxed">
+                Stop apologizing for who you are. Start becoming who you're meant to be.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="#" class="inline-flex items-center px-8 py-4 bg-secondary text-primary font-semibold rounded-lg hover:bg-secondary/90 transition-colors text-lg">
+                    Buy Digital Edition - $9.99
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+                <a href="#" class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors text-lg">
+                    Buy Paperback - $16.99
+                </a>
+            </div>
+            <p class="text-white/80 text-sm">
+                30-day money-back guarantee • Free shipping on orders over $25
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text text-white py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-2xl font-serif font-bold mb-4">Unapologetically Too Much</h4>
+            <p class="text-white/80 mb-4">Breaking Free, Burning Bright, Becoming Whole</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="about-book.html" class="text-white/80 hover:text-white transition-colors">About the Book</a>
+                <a href="about-author.html" class="text-white/80 hover:text-white transition-colors">About the Author</a>
+                <a href="get-book.html" class="text-white/80 hover:text-white transition-colors">Get the Book</a>
+            </div>
+            <p class="text-white/60 text-sm">&copy; 2024 Zaria Frances Rose. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
